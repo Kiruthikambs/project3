@@ -1,0 +1,119 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+.navbar ul {
+    list-style-type: none;
+    text-align: center;
+}
+.navbar ul li {
+    display: inline;
+    margin: 0 10px;
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.navbar ul li a:hover {
+    background-color: #555;
+}
+
+/* Product details section */
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product-image {
+    flex: 1 1 100%; /* Responsive sizing */
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+.product-info {
+    flex: 1 1 100%; /* Responsive sizing */
+    padding: 0 20px;
+}
+.product-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.product-description {
+    color: #666;
+    margin-bottom: 15px;
+}
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%; /* Full width on mobile */
+}
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+/* Customer reviews section */
+.customer-reviews {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Related products section */
+.related-products {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.related-products h2 {
+    margin-bottom: 10px;
+}
+
+/* Media Query for Responsive Design */
+@media (min-width: 300px) {
+    .product-details {
+        flex-wrap: nowrap;
+    }
+    .product-image, .product-info {
+        flex: 1 1 50%;
+        max-width: 50%;
+    }
+}
